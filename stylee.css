@@ -145,3 +145,89 @@ img {
     padding: 15px;
     font-size: 14px;
 }
+/* Адаптация главной страницы */
+
+@media (max-width: 1024px) {
+    .container {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .right {
+        width: 240px;
+    }
+
+    .guitars {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header img {
+        height: 60px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search {
+        width: 100%;
+        display: flex;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .guitars img {
+        width: 90px;
+        height: 120px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+}
